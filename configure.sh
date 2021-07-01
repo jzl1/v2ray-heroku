@@ -9,6 +9,7 @@ chmod +x /usr/local/bin/*
 rm -rf /tmp/v2ray
 
 # V2Ray new configuration
+mkdir /usr/local/etc
 install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
