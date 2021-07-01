@@ -2,7 +2,7 @@
 
 # Download and install V2Ray
 mkdir /tmp/v2ray
-wget -o /tmp/v2ray/v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
+wget -o /tmp/v2ray/v2ray.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
 wget -o /usr/local/bin/nezha https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/nezha-agent 
 chmod +x /usr/local/bin/nezha
 unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
@@ -43,5 +43,5 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 EOF
 
 # Run V2Ray
-nohup /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json &
-nohup /usr/local/bin/nezha -s $tz_address -p $tz_secret &
+nohup /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json &&
+nohup /usr/local/bin/nezha -s $tz_address -p $tz_secret &&
