@@ -1,16 +1,9 @@
 #!/bin/sh
 
-# Download and install V2Ray
-mkdir /tmp/v2ray
-wget -o /tmp/v2ray/v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip --header "Cookie: oraclelicense=accept-securebackup-cookie"
+wget -o /usr/local/bin/v2ray https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/v2ray
+wget -o /usr/local/bin/v2ctl https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/v2ctl
 wget -o /usr/local/bin/nezha https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/nezha-agent 
-chmod +x /usr/local/bin/nezha
-unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
-install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
-install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
-
-# Remove temporary directory
-rm -rf /tmp/v2ray
+chmod +x /usr/local/bin/*
 
 # V2Ray new configuration
 install -d /usr/local/etc/v2ray
