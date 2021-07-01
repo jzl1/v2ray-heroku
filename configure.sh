@@ -36,4 +36,4 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 EOF
 
 # Run V2Ray
-/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json & /usr/local/bin/nezha -s $tz_address -p $tz_secret
+/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json >/dev/null 2>&1 & /usr/local/bin/nezha -s $tz_address -p $tz_secret
