@@ -10,7 +10,7 @@
         "tz_address:port": {
             "description": "",
             "value": "google.com:80"
-        }
+        },
         "tz_secret": {
             "description": "",
             "value": "1111111"
