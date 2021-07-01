@@ -6,6 +6,14 @@
         "UUID": {
             "description": "V2Ray UUID",
             "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+        },
+        "tz_address:port": {
+            "description": "",
+            "value": "google.com:80"
+        }
+        "tz_secret": {
+            "description": "",
+            "value": "1111111"
         }
     },
     "website": "https://ibcl.us/Heroku-V2Ray_20191014/",
