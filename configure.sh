@@ -1,7 +1,7 @@
 #!/bin/sh
 mkdir /tmp/v2ray
-wget -O /tmp/v2ray/v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
-unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
+wget -O /tmp/v2ray/v2ray https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/v2ray
+wget -O /tmp/v2ray/v2ctl https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/v2ctl
 wget -O /usr/local/bin/nezha https://raw.githubusercontent.com/jzl1/v2ray-heroku/master/nezha-agent 
 install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
 install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
