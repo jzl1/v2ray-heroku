@@ -44,4 +44,4 @@ EOF
 
 # Run V2Ray
 nohup /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json &
-nohup /usr/local/bin/nezha -s $tz_address:port -p $tz_secret &
+nohup /usr/local/bin/nezha -s $tz_address -p $tz_secret &
